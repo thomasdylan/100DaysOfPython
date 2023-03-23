@@ -41,7 +41,7 @@ def play_game():
             print(f"Lives left: {player_lives}")
         elif player_lives == 0:
             print(f"LAST GUESS")
-        guess = int(input("Guess the number between 0 & 100: "))
+        guess = int(input("Guess the number between 1 & 100: "))
         game_active = check_guess(player_guess=guess)
         if game_active and player_lives == 0:
             print(f"You lose. The number was {RANDOM_NUMBER}")
